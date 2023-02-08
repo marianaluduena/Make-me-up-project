@@ -8,9 +8,21 @@ body{
    background-color: #e93b5b;
 }
 
+li{
+   list-style: none;
+}
 /*..................NAVEGATION MENU..................*/
 
 .collapse{
    display: flex;
    justify-content: center;
+}
+
+
+
+
+
+/*.....................FOOTER.........................*/
+footer{
+    background-color:#423939;
 }
