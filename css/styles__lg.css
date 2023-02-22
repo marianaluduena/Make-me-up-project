@@ -1,0 +1,10 @@
+/*.............NAVBAR..................*/
+.navbar-nav>a {
+
+    cursor: pointer;
+}
+
+.navbar-nav>a:hover {
+
+    color: #e93b5b;
+}

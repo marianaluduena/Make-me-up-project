@@ -1,5 +1,24 @@
+/*.............NAVBAR..................*/
 
+.navbar-expand-md .navbar-collapse{
 
+    justify-content: space-around;
+}
+
+.navbar-brand{
+
+    font-size: 2rem;
+}
+
+.navbar-nav .nav-link.active{
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link.active{
+    color: #e93b5b;
+}
+
+/*...........................*/
 main{
     max-width: 1680px;
 }

@@ -12,12 +12,21 @@ li{
    list-style: none;
 }
 /*..................NAVEGATION MENU..................*/
-
 .collapse{
    display: flex;
    justify-content: center;
 }
 
+.navbar-brand{
+
+   font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
+   font-size: 1.5;
+}
+
+.navbar-nav .nav-link.active {
+
+   font-family: "Hind Madurai", Arial, Helvetica, sans-serif;
+}
 
 
 
