@@ -28,7 +28,20 @@ li{
    font-family: "Hind Madurai", Arial, Helvetica, sans-serif;
 }
 
+/*.....................PRODUCTS.........................*/
+.shop__content{
 
+   display: flex;
+   flex-direction: column;
+}
+
+.card{
+   width: 100%;
+}
+
+.buy__btn{
+   width: 100%;
+}
 
 
 /*.....................FOOTER.........................*/

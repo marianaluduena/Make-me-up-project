@@ -22,3 +22,19 @@
 main{
     max-width: 1680px;
 }
+
+/*...........PRODUCTS...............*/
+
+.shop__content{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 20%
+}
+
+
+.buy__btn{
+    width: 20%;
+}
