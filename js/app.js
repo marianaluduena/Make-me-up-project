@@ -2,3 +2,5 @@ const shopContent = document.getElementById("shopContent"); // div in the index 
 
 let shoppingCart = [];
 
+const productsContainer = document.getElementById("productsContainer");
+

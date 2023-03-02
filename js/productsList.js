@@ -44,6 +44,7 @@ const products = [{
 
 products.forEach((product) => {
 
+
     let content = document.createElement("div");
     content.className = "card";
     content.innerHTML = `
@@ -54,13 +55,12 @@ products.forEach((product) => {
     `;
 
     // Adding the array of products to the index inside a div called shopContent
-    shopContent.append(content);
+    productsContainer.append(content);
 
     // Creating a buy btn
 
     let buyBtn = document.createElement("button");
     buyBtn.className = "btn btn-dark buy__btn"
     buyBtn.innerText = "Buy";
-    //content.append(buyBtn);
-    shopContent.append(buyBtn);
+    content.append(buyBtn);
 });
