@@ -23,6 +23,18 @@ main{
     max-width: 1680px;
 }
 
+/*..................CARROUSEL..................*/
+
+.carousel__container{
+
+    margin: auto;
+}
+
+.carousel__container div > img{
+    max-height: 550px;
+    margin: auto;
+}
+
 /*...........PRODUCTS...............*/
 
 .shop__content{
@@ -35,6 +47,4 @@ main{
     gap: 4rem;
     margin: 1rem;
 }
-.card{
-    width: 20%
-}
+
