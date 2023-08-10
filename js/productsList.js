@@ -46,12 +46,17 @@ products.forEach((product) => {
 
 
     let content = document.createElement("div");
-    content.className = "card m-2";
+    content.className = "col-12 col-md-6 col-lg-4 m-2";
     content.innerHTML = `
-    
-    <img class="img__product" src="${product.img}" />
-    <h3 class="text-center p-2">${product.name} </h3>
-    <p class="mx-1">${product.price} $</p>
+    <div class="row">
+    <div class="col-12 p-3">
+    <img class="img__product img-fluid" src="${product.img}" alt="${product.name}" />
+    <div class="card-body">
+    <h3 class="text-center p-2 card-title">${product.name} </h3>
+    <p class="mx-1 card-text">${product.price} $</p>
+    </div>
+    </div>
+    </div>
     `;
 
     // Adding the array of products to the index inside a div called shopContent

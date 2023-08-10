@@ -43,8 +43,8 @@ main{
 }
 
 #productsContainer{
-
-    gap: 4rem;
-    margin: 1rem;
-}
+    display: flex;
+    flex-wrap: wrap;
+  
+ }
 
