@@ -1,23 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: 1px solid whitesmoke;
 }
 
-body{
+body {
    background-color: #e93b5b;
 }
 
-li{
+header,
+main,
+footer {
+   max-width: 1680px;
+}
+
+li {
    list-style: none;
 }
+
+a {
+   text-decoration: none;
+   color: whitesmoke;
+}
+
+.container {
+   max-width: 1680px;
+}
+
 /*..................NAVEGATION MENU..................*/
-.collapse{
+.collapse {
    display: flex;
    justify-content: center;
 }
 
-.navbar-brand{
+.navbar-brand {
 
    font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
    font-size: 1.5;
@@ -29,29 +46,50 @@ li{
 }
 
 /*.....................PRODUCTS.........................*/
-.shop__content{
+
+.banner {
+
+   max-width: 850px;
+}
+
+.shop__content {
 
    display: flex;
 }
 
-#productsContainer{
+#productsContainer {
    display: flex;
+   justify-content: space-around;
    flex-wrap: wrap;
- 
+
 }
 
-.card{
+.shop_card_product {
+   width: 100%;
+   background-color: whitesmoke;
+   border-radius: 10px;
+   padding: 5px;
+}
+
+.card {
    width: 100%;
 }
 
-.buy__btn{
+.buy__btn {
    width: 100%;
 }
 
-.img-container{
-   max-width: 350px;
+.img-container {
+   max-width: 150px;
 }
+
 /*.....................FOOTER.........................*/
-footer{
-    background-color:#423939;
+footer {
+   background-color: #423939;
+   justify-content: center;
+}
+
+ul>li {
+   padding: 0.5rem;
+   text-decoration: none;
 }
