@@ -2,11 +2,11 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   outline: 1px solid whitesmoke;
+  /* outline: 1px solid whitesmoke;*/
 }
 
 body {
-   background-color: #e93b5b;
+   background-color: whitesmoke;
 }
 
 header,
@@ -14,6 +14,14 @@ main,
 footer {
    max-width: 1680px;
 }
+
+main {
+   background-color: whitesmoke;
+}
+/*
+.shop__content {
+   background-color: #e93b5b;
+}*/
 
 li {
    list-style: none;
@@ -61,6 +69,10 @@ a {
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
+   background-color: #e93b5b;
+   margin: 1.2rem;
+   padding: 1.5rem;
+   border-radius: 10px;
 
 }
 
