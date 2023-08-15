@@ -1,6 +1,15 @@
 
 const productsContainer = document.getElementById("productsContainer");
 
+// Catching id to show shoppingCart
+
+const showShoppingCart = document.getElementById("shoppingCart");
+
+// Catching id to show the modal
+
+const modalContainer = document.getElementById("modalContainer");
+
+
 let shoppingCart = [];
 
 // First, I'm going to show all the products
@@ -44,5 +53,46 @@ products.forEach((product) => {
         });
         console.log(shoppingCart);
     });
+});
+
+// Event listener to show the shopping cart
+
+showShoppingCart.addEventListener("click", () => {
+
+
+    const modalHeader = document.createElement("div");
+    modalHeader.className = "modal-header";
+    modalHeader.innerHTML = `
+        <h5 class="modal-header-title"> Your Cart<h5/>
+        `
+    modalContainer.append(modalHeader);
+
+    // Close button modal
+
+    const modalCloseBtn = document.createElement("h1");
+    modalCloseBtn.innerText = "X";
+    modalCloseBtn.className = "modal-header-button";
+
+    modalHeader.append(modalCloseBtn);
+
+    shoppingCart.forEach((product) => {
+
+        // Modal content
+
+        let cartContent = document.createElement("div");
+        cartContent.className = "modal-content";
+        cartContent.innerHTML = `
     
+    <img src = "${product.img}" alt= "${product.name}" class="img-fluid img__product "/>
+    <h3> ${product.name} </h3>
+    <p> "$ " ${product.price} </p>
+
+    `
+        modalContainer.append(cartContent);
+    });
+
+    // Modal footer
+
+    const total = shoppingCart.reduce((acc, element) => acc + element.price, 0);
+
 });
