@@ -85,7 +85,7 @@ showShoppingCart.addEventListener("click", () => {
     
     <img src = "${product.img}" alt= "${product.name}" class="img-fluid img__product "/>
     <h3> ${product.name} </h3>
-    <p> "$ " ${product.price} </p>
+    <p> $ ${product.price} </p>
 
     `
         modalContainer.append(cartContent);
@@ -94,5 +94,10 @@ showShoppingCart.addEventListener("click", () => {
     // Modal footer
 
     const total = shoppingCart.reduce((acc, element) => acc + element.price, 0);
+
+    const totalBuying = document.createElement("div");
+    totalBuying.className = "shoppingCartTotal";
+    totalBuying.innerHTML = `Total: $ ${total} `
+    modalContainer.append(totalBuying);
 
 });

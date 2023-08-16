@@ -13,15 +13,12 @@ header,
 main,
 footer {
    max-width: 1680px;
+   display: grid;
 }
 
 main {
    background-color: whitesmoke;
 }
-/*
-.shop__content {
-   background-color: #e93b5b;
-}*/
 
 li {
    list-style: none;
@@ -94,6 +91,18 @@ a {
 .img-container {
    max-width: 150px;
 }
+
+.img__product{
+   background-color: whitesmoke;
+}
+
+/*.......................SHOPPING CART MODAL..........*/
+
+.modal-content{
+
+   background-color: #e93b5b;
+}
+
 
 /*.....................FOOTER.........................*/
 footer {
