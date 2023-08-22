@@ -2,7 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-  /* outline: 1px solid whitesmoke;*/
+   /* outline: 1px solid whitesmoke;*/
 }
 
 body {
@@ -16,22 +16,24 @@ footer {
    display: grid;
 }
 
-header{
+header {
 
-   display: grid;
-   grid-template-columns: 1fr 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.5rem;
 }
 
-header .shopping{
+.shopping {
    position: relative;
    text-align: right;
 }
 
-header .shopping img{
+.shopping img {
    width: 40px;
 }
 
-header .shopping span{
+.shopping span {
    background-color: #e93b5b;
    border-radius: 55%;
    display: flex;
@@ -40,11 +42,11 @@ header .shopping span{
    color: whitesmoke;
    position: absolute;
    top: -5px;
-   left: 80%;
+   left: 55%;
    padding: 3px 10px;
 }
 
-.list{
+.list {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    column-gap: 20px;
@@ -52,16 +54,11 @@ header .shopping span{
    margin-top: 50px;
 }
 
-.card{
-   position: fixed;
-   top: 120px;
-   left: calc(100% - 500px);
+.card {
+ 
    background-color: #e93b5bc4;
-   height: 100vh;
-   transition: 0.5s;
+ 
 }
-
-
 
 main {
    background-color: whitesmoke;
@@ -92,6 +89,11 @@ a {
 .navbar-nav .nav-link.active {
 
    font-family: "Hind Madurai", Arial, Helvetica, sans-serif;
+
+}
+
+.navbar-nav .nav-link:hover {
+   border-bottom: 1px solid #423939;
 }
 
 /*.....................PRODUCTS.........................*/
@@ -136,13 +138,13 @@ a {
    max-width: 150px;
 }
 
-.img__product{
+.img__product {
    background-color: whitesmoke;
 }
 
 /*.......................SHOPPING CART MODAL..........*/
 
-.modal-content{
+.modal-content {
 
    background-color: #e93b5b;
 }
