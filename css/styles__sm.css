@@ -138,7 +138,8 @@ a {
    max-width: 150px;
 }
 
-.img__product, .img__product__cart {
+.img__product,
+.img__product__cart {
    background-color: whitesmoke;
    border-radius: 10px;
 }
@@ -146,30 +147,60 @@ a {
 /*.......................SHOPPING CART MODAL..........*/
 
 
-.modal-container{
+.modal-container {
    position: absolute;
-   top:100%; right: 0;
+   top: 100%;
+   right: 0;
    height: calc(100vh - 9.5rem);
    width: 35rem;
 }
 
-.modal-header, .modal-content, .shoppingCartTotal {
+.modal-header,
+.modal-content,
+.shoppingCartTotal {
 
    background-color: #e93b5b;
 }
 
-.img__product__cart{
-   width: 250px;
+.modal-header-button {
+
+   cursor: pointer;
+   background-color: whitesmoke;
+   padding: 0.5rem;
+   border-radius: 5px;
+   width: 30px;
 }
 
-.cart__products__container{
+.img__product__cart {
+   width: 150px;
+}
+
+.cart__products__container {
 
    position: relative;
    margin: 2rem 0;
    display: flex;
    align-items: center;
+   gap: 0.5rem;
 }
 
+.cart__products__container>span {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   cursor: pointer;
+   color: black;
+   background-color: whitesmoke;
+   padding: 0.5rem;
+   border-radius: 5px;
+   width: 30px;
+}
+
+
+.cart__products__container>span:hover {
+   color: whitesmoke;
+   background-color: black;
+}
 
 /*.....................FOOTER.........................*/
 footer {
