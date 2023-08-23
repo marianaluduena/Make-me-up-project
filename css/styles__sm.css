@@ -55,9 +55,9 @@ header {
 }
 
 .card {
- 
+
    background-color: #e93b5bc4;
- 
+
 }
 
 main {
@@ -138,15 +138,36 @@ a {
    max-width: 150px;
 }
 
-.img__product {
+.img__product, .img__product__cart {
    background-color: whitesmoke;
+   border-radius: 10px;
 }
 
 /*.......................SHOPPING CART MODAL..........*/
 
-.modal-content {
+
+.modal-container{
+   position: absolute;
+   top:100%; right: 0;
+   height: calc(100vh - 9.5rem);
+   width: 35rem;
+}
+
+.modal-header, .modal-content, .shoppingCartTotal {
 
    background-color: #e93b5b;
+}
+
+.img__product__cart{
+   width: 250px;
+}
+
+.cart__products__container{
+
+   position: relative;
+   margin: 2rem 0;
+   display: flex;
+   align-items: center;
 }
 
 

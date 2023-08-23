@@ -63,7 +63,7 @@ showShoppingCart.addEventListener("click", () => {
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header";
     modalHeader.innerHTML = `
-        <h5 class="modal-header-title"> Your Cart<h5/>
+        <h5 class="modal-header-title p-2"> Your Cart<h5/>
         `
     modalContainer.append(modalHeader);
 
@@ -80,13 +80,15 @@ showShoppingCart.addEventListener("click", () => {
         // Modal content
 
         let cartContent = document.createElement("div");
-        cartContent.className = "modal-content";
+        cartContent.className = "modal-content p-2";
         cartContent.innerHTML = `
-    
-    <img src = "${product.img}" alt= "${product.name}" class="img-fluid img__product "/>
-    <h3> ${product.name} </h3>
-    <p> $ ${product.price} </p>
 
+    <div class="cart__products__container">
+    <img src = "${product.img}" alt= "${product.name}" class="img-fluid img__product__cart "/>
+
+    <h3 class="p-2"> ${product.name} </h3>
+    <p class="p-2"> $ ${product.price} </p>
+    <div>
     `
         modalContainer.append(cartContent);
     });
@@ -96,7 +98,7 @@ showShoppingCart.addEventListener("click", () => {
     const total = shoppingCart.reduce((acc, element) => acc + element.price, 0);
 
     const totalBuying = document.createElement("div");
-    totalBuying.className = "shoppingCartTotal";
+    totalBuying.className = "shoppingCartTotal p-2";
     totalBuying.innerHTML = `Total: $ ${total} `
     modalContainer.append(totalBuying);
 
