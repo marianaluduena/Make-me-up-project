@@ -103,20 +103,19 @@ a {
    max-width: 850px;
 }
 
-.shop__content {
-
-   display: flex;
-}
-
 #productsContainer {
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
    background-color: #e93b5b;
-   margin: 1.2rem;
+   margin: 1.5rem auto;
    padding: 1.5rem;
    border-radius: 10px;
 
+}
+
+#productsContainer img{
+   width: 100%;
 }
 
 .shop_card_product {

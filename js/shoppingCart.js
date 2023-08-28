@@ -71,5 +71,6 @@ const showCart = () => {
 
 };
 
+// Adding the event listener to show the cart with the function showCart
 
 showShoppingCart.addEventListener("click", showCart());

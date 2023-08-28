@@ -1,56 +1,51 @@
 /*.............NAVBAR..................*/
 
-.navbar-expand-md .navbar-collapse{
+.navbar-expand-md .navbar-collapse {
 
     justify-content: space-around;
 }
 
-.navbar-brand{
+.navbar-brand {
 
     font-size: 2rem;
 }
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
     font-size: 1.2rem;
 }
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
     color: #e93b5b;
 }
 
 
 /*..................CARROUSEL..................*/
 
-.carousel__container{
+.carousel__container {
 
     margin: auto;
 }
 
-.carousel__container div > img{
+.carousel__container div>img {
     max-height: 550px;
     margin: auto;
 }
 
 /*...........PRODUCTS...............*/
 
-.shop__content{
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#productsContainer{
+#productsContainer {
     display: flex;
     flex-wrap: wrap;
-  
- }
 
- .shop_card_product{
+}
+
+.shop_card_product {
     width: 280px;
- }
+}
 
 /*.....................FOOTER.........................*/
 
 footer {
-   
+
     justify-content: left;
- }
+}
