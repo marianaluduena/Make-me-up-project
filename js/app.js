@@ -1,4 +1,5 @@
 
+
 const productsContainer = document.getElementById("productsContainer");
 
 // Catching id to show the modal
