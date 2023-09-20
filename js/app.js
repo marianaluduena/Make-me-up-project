@@ -1,8 +1,10 @@
-
-
 const productsContainer = document.getElementById("productsContainer");
 
-// Catching id to show the modal
+// Catching div's id to show the shopping cart when clicking the image
+
+const showShoppingCart = document.getElementById("shoppingCart");
+
+// Catching modal's id
 
 const modalContainer = document.getElementById("modalContainer");
 
