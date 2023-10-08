@@ -1,11 +1,5 @@
 // Here goes everything about the shopping cart
 
-// Catching id to show shoppingCart
-
-//const showShoppingCart = document.getElementById("shoppingCart");
-
-// Event listener to show the shopping cart
-
 
 //showShoppingCart.addEventListener("click", () => {
 
@@ -72,7 +66,7 @@ const showCart = () => {
 };
 
 
-// Adding the event listener to show the cart with the function showCart
-showShoppingCart.addEventListener("click", showCart());
+    // Adding the event listener to show the cart with the function showCart
+    showShoppingCart.addEventListener("click", showCart);
 
 //});
