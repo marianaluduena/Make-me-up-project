@@ -1,8 +1,5 @@
 // Here goes everything about the shopping cart
 
-
-//showShoppingCart.addEventListener("click", () => {
-
 const showCart = () => {
     // Clear all the items from the cart before showing the cart again and preventing to replicate the products with every click on the cart btn
 
@@ -35,7 +32,7 @@ const showCart = () => {
 
     shoppingCart.forEach((product) => {
 
-        // Modal content
+        // Modal content (products added)
 
         let cartContent = document.createElement("div");
         cartContent.className = "modal-content p-2";
@@ -47,11 +44,19 @@ const showCart = () => {
 
     <h3 class="p-2"> ${product.name} </h3>
     <p class="p-2"> $ ${product.price} </p>
-    <span class="d-flex justify-content-center"> X </span>
-
-    <div>
+    <span class= "d-flex justify-content-center" id="delete"> X </span>
+    
+    </div>
     `
         modalContainer.append(cartContent);
+
+        const closeBtnProduct = document.getElementById("delete");
+        
+        // Event listener to the X in the cart to delete a product
+
+        closeBtnProduct.addEventListener("click", deleteProduct);
+
+
     });
 
     // Modal footer
@@ -66,7 +71,26 @@ const showCart = () => {
 };
 
 
-    // Adding the event listener to show the cart with the function showCart
-    showShoppingCart.addEventListener("click", showCart);
+// Adding the event listener to show the cart with the function showCart
 
-//});
+showShoppingCart.addEventListener("click", showCart);
+
+// Delete product from the cart
+
+const deleteProduct = () => {
+
+    // First find the product's id that the user wants to delete from the cart
+
+    const findProductsId = shoppingCart.find((element) => element.id);
+
+    // Read every element on the cart and leave those when their id is different from the product the user wants to delete
+
+    shoppingCart = shoppingCart.filter((cartId) => {
+
+        return cartId !== findProductsId;
+    });
+
+    showCart();
+
+
+};
