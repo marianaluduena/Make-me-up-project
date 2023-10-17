@@ -48,14 +48,25 @@ const showCart = () => {
     
     </div>
     `
+// <span class= "d-flex justify-content-center" id="delete"> X </span>
+
         modalContainer.append(cartContent);
+
+        /* Variant
+
+        const closeBtnProduct = document.createElement("span");
+        closeBtnProduct.className = "d-flex justify-content-center";
+        closeBtnProduct.innerText = "X";
+        modalContainer.append(closeBtnProduct);
+
+       closeBtnProduct.addEventListener("click", deleteProduct);*/
+      
 
         const closeBtnProduct = document.getElementById("delete");
         
+
         // Event listener to the X in the cart to delete a product
-
         closeBtnProduct.addEventListener("click", deleteProduct);
-
 
     });
 
@@ -76,8 +87,21 @@ const showCart = () => {
 showShoppingCart.addEventListener("click", showCart);
 
 // Delete product from the cart
+/*
+function deleteProduct(idProduct){
+    
+    const findProductsId = shoppingCart.find((element) => idProduct);
 
-const deleteProduct = () => {
+    // Read every element on the cart and leave those when their id is different from the product the user wants to delete
+
+    shoppingCart = shoppingCart.filter((cartId) => {
+
+        return cartId !== findProductsId;
+});*/
+
+// Corregir para pasar bien el parámetro en la arrow function
+
+const deleteProduct = (element) => {
 
     // First find the product's id that the user wants to delete from the cart
 
