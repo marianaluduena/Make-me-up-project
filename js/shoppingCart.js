@@ -101,19 +101,10 @@ function deleteProduct(idProduct){
 
 // Corregir para pasar bien el parámetro en la arrow function
 
-const deleteProduct = (element) => {
+const deleteProduct = (id) => {
 
-    // First find the product's id that the user wants to delete from the cart
-
-    const findProductsId = shoppingCart.find((element) => element.id);
-
-    // Read every element on the cart and leave those when their id is different from the product the user wants to delete
-
-    shoppingCart = shoppingCart.filter((cartId) => {
-
-        return cartId !== findProductsId;
-    });
-
+    shoppingCart = shoppingCart.filter( e => e.id != id);
+    
     showCart();
 
 
